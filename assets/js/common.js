@@ -32,7 +32,7 @@ function showElement(element, index, area){
             [keyArea] : "100%",
         }, 400, 'linear', function(){
             element.eq(index).css({ [keyArea] : '0', 'left' : '0' });
-            showElement(element, index+1);
+            setTimeout(function(){ showElement(element, index+1); }, 2000);            
         });
     
 
